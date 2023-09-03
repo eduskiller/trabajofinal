@@ -1,0 +1,86 @@
+*{margin: 0;
+padding: 0;}
+    
+.body{
+   background-color: rgb(241, 211, 201);}
+
+.dias{font-weight: bold;font-size: large;}
+span{color: rgb(16, 192, 25);font-size: medium;}
+.horas{font-style: italic;}
+.Lu{color: brown;}
+.Ma{color: blue;}
+.Sa{color: rgb(174, 231, 117);}
+
+h1{text-align: center;}
+
+.contenedor{ 
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+
+.header{background-color: rgb(191, 217, 252);
+    height: 35px;
+    width: 100%;
+  padding-left: 20px;
+  
+
+}
+.footer{
+    background-color: #212f3d;}
+.links{
+color: white;
+display: flex;
+font-size: 1.2rem;
+font-family: 'Poppins';
+line-height: 40px;
+text-decoration: none;}
+.icon{
+font-size: 25px;
+background-color: #2388ed;
+padding: 5px;
+margin-bottom: 5px;
+margin-right: 10px;
+border-radius: 50%;}
+.icon1{
+    font-size: 25px;
+    background-color: #ed23be;
+    padding: 5px;
+    margin-bottom: 5px;
+    margin-right: 10px;
+    border-radius: 50%;}
+    .icon2{
+        font-size: 25px;
+        background-color: #1de258;
+        padding: 5px;
+        margin-bottom: 5px;
+        margin-right: 10px;
+        border-radius: 50%;}
+.icon:hover {
+  background-color: rgb(197, 237, 68);
+}
+.icon1:hover{
+  background-color: coral;
+}
+.icon2:hover{
+  background-color: rgb(52, 116, 235);
+}
+.container-final{
+background-color: rgb(48, 224, 224);
+text-align: center;
+font-size: 1.1rem;
+padding:5px;
+font-family:'Poppins';
+font-weight: bold;
+}
+@media (max-width:480px){
+  .body {
+   grid-template-areas:   "contenedor"
+                          "container-redes"
+                          "container-final"
+                           
+                          "header"
+                        "footer";
+                      }
+}
